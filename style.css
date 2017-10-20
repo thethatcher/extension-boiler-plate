@@ -3,7 +3,9 @@
 */
 
 /* Displays for HTML 5 */
-/*turn the search bar container pink*/
-#container{
-	background-color: pink;
+/*change padding to 0px on Phoenix console*/
+.table th, .table td {
+    padding: 0px !important;
+    vertical-align: top;
+    border-top: 1px solid darkgray !important;
 }

@@ -1,23 +1,18 @@
 {
   "manifest_version": 2,
 
-  "name": "youtube extension example",
-  "description": "This extension is an example of how to scrape and add data to a webpage",
+  "name": "Phoenix Padding to 0",
+  "description": "This extension changes Phoenix console CSS so the tables have 0 padding instead of .75",
   "version": "1.0",
-
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
+  
   "permissions": [
     "activeTab",
     "https://ajax.googleapis.com/"
   ],
    "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/*"],
-      "css": ["style.css"],
-      "js": ["script.js"]
+      "matches": ["https://evault--c.na42.visual.force.com/apex/PhoenixConsole?sfdc.tabName=01r2A000000Wc4N"],
+      "css": ["style.css"]
     }
   ],
    "web_accessible_resources": ["bootstrap.css"]
